@@ -11,8 +11,8 @@ void BM_false_branch(benchmark::State& state) {
     for (size_t i = 0; i < N; ++i) {
         v1[i] = rand();
         v2[i] = rand();
-        c1[i] = rand() & 0x1;
-        c2[i] = !c1[i];
+        c1[i] = rand() & 0x1;    
+        c2[i] = !c1[i];        // so b1 || b2 should alwasy be true.
     }
     unsigned long* p1 = v1.data();
     unsigned long* p2 = v2.data();
