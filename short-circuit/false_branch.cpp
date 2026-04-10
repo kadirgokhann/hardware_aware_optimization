@@ -39,6 +39,7 @@ BENCHMARK_MAIN();
 
 
 /*
+g++ false_branch.cpp  -lbenchmark -lpthread -O2 -o false_branch
 ----------------------------------------------------------------------------------
 Benchmark                        Time             CPU   Iterations UserCounters...
 ----------------------------------------------------------------------------------
